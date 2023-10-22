@@ -2,7 +2,7 @@
 
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or roman_string is None:
-        return (0)
+        return 0
 
     roman_numerals = {
         'I': 1,
@@ -20,9 +20,10 @@ def roman_to_int(roman_string):
     for numeral in roman_string:
         value = roman_numerals.get(numeral, 0)
         if value > prev_value:
-            total += value - 2 * prev_value  # subtract twice since it was added before
+            # subtract twice since it was added before
+            total += value - 2 * prev_value
         else:
             total += value
         prev_value = value
 
-    return (total)
+    return total
