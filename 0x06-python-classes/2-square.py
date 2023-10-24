@@ -2,7 +2,7 @@
 
 class Square:
     """
-    This class defines a square with a private size attribute.
+    This class define a square with a private size attribute.
     
     Attributes:
         __size (int): The size of the square.
