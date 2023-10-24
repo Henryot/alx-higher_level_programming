@@ -1,8 +1,6 @@
-#!/usr/bin/python3
-
 class Square:
     """
-    This class defines a square with checks for valid size input.
+    This class defines a square with a private size attribute.
     
     Attributes:
         __size (int): The size of the square.
@@ -13,8 +11,8 @@ class Square:
         Initializes the square with a given size.
         
         Args:
-            size (int): The size of the square. Defaults to 0.
-            
+            size (int, optional): The size of the square. Defaults to 0.
+        
         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
@@ -23,5 +21,4 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        
         self.__size = size
